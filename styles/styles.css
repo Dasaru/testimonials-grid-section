@@ -1,0 +1,57 @@
+/***** Reset *****/
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+/***** Variables *****/
+:root {
+}
+
+/***** Fonts *****/
+
+/***** Mobile *****/
+body {
+}
+
+main {
+}
+
+.card {
+}
+
+.card__header {
+}
+
+.card__header__img {
+}
+
+.card__header__container {
+}
+
+.card__header__name {
+}
+
+.card__header__title {
+}
+
+.card__pull-quote {
+}
+
+.card__quote {
+}
+
+/***** Desktop *****/
+
+/***** Footer ******/
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}

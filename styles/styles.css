@@ -9,12 +9,30 @@ html {
 
 /***** Variables *****/
 :root {
+  --primary-light: hsl(260, 100%, 95%);
+  --primary-medium: hsl(264, 82%, 80%);
+  --primary-dark: hsl(263, 55%, 52%);
+  --grey-100: hsl(214, 17%, 92%);
+  --grey-200: hsl(0, 0%, 81%);
+  --grey-400: hsl(224, 10%, 45%);
+  --grey-500: hsl(217, 19%, 35%);
+  --dark-blue: hsl(219, 29%, 14%);
 }
 
 /***** Fonts *****/
+@font-face {
+  font-family: "Barlow-SemiBold";
+  src: url("../fonts/BarlowSemiCondensed-SemiBold.ttf");
+}
+
+@font-face {
+  font-family: "Barlow-Medium";
+  src: url("../fonts/BarlowSemiCondensed-Medium.ttf");
+}
 
 /***** Mobile *****/
 body {
+  font-size: 1.3rem;
 }
 
 main {

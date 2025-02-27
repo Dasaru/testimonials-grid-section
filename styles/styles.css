@@ -14,6 +14,7 @@ html {
   --primary-dark: hsl(263, 55%, 52%);
   --grey-100: hsl(214, 17%, 92%);
   --grey-200: hsl(0, 0%, 81%);
+  --grey-300: #a3aab4;
   --grey-400: hsl(224, 10%, 45%);
   --grey-500: hsl(217, 19%, 35%);
   --dark-blue: hsl(219, 29%, 14%);
@@ -47,7 +48,7 @@ main {
 
 .card {
   background-color: white;
-  color: black;
+  color: var(--grey-500, black);
   display: flex;
   flex-direction: column;
   border-radius: 0.8rem;
@@ -56,48 +57,108 @@ main {
   box-shadow: 4rem 5rem 5rem rgba(0, 0, 0, 0.2);
 }
 
-.card--theme-purple {
-  background-color: var(--primary-dark, black);
-  color: white;
-}
-
-.card--theme-grey {
-  background-color: var(--grey-500, black);
-  color: white;
-}
-
-.card--theme-blue {
-  background-color: var(--dark-blue, black);
-  color: white;
-}
-
 .card__header {
   display: flex;
   gap: 1.7rem;
 }
 
 .card__header__img {
-  width: 2.8rem;
-  border-radius: 50%;
+  width: 3rem;
   height: 3rem;
+  border-radius: 50%;
 }
 
 .card__header__container {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  gap: 0.4rem;
 }
 
 .card__header__name {
+  font-family: "Barlow-SemiBold", sans-serif;
+  font-size: 1.3rem;
+  line-height: 110%;
 }
 
 .card__header__title {
+  font-family: "Barlow-SemiBold", sans-serif;
+  font-size: 1.1rem;
+  line-height: 110%;
+  color: var(--grey-300, black);
 }
 
 .card__pull-quote {
+  font-family: "Barlow-SemiBold", sans-serif;
+  font-size: 2rem;
+  line-height: 120%;
 }
 
 .card__quote {
+  font-family: "Barlow-Medium", sans-serif;
+  font-size: 1.3rem;
+  line-height: 140%;
+  color: var(--grey-400, black);
+}
+
+/***** Themes *****/
+
+/* Purple Theme */
+.card--theme-purple {
+  background-color: var(--primary-dark, black);
+  color: white;
+}
+
+.card--theme-purple .card__header__img {
+  border: 0.2rem solid #a776f1;
+}
+
+.card--theme-purple .card__header__title {
+  color: var(--primary-light, white);
+}
+
+.card--theme-purple .card__quote {
+  color: var(--primary-light, white);
+}
+
+/* Grey Theme */
+.card--theme-grey {
+  background-color: var(--grey-500, black);
+  color: white;
+}
+
+.card--theme-grey .card__header__title {
+  color: var(--grey-300, white);
+}
+
+.card--theme-grey .card__pull-quote {
+  color: white;
+}
+
+.card--theme-grey .card__quote {
+  color: var(--grey-100, white);
+}
+
+/* Blue Theme */
+.card--theme-blue {
+  background-color: var(--dark-blue, black);
+  color: white;
+}
+
+.card--theme-blue .card__header__img {
+  border: 0.2rem solid var(--primary-dark, purple);
+}
+
+.card--theme-blue .card__header__title {
+  color: white;
+}
+
+.card--theme-blue .card__pull-quote {
+  color: var(--grey-200, white);
+}
+
+.card--theme-blue .card__quote {
+  color: var(--grey-100, white);
 }
 
 /***** Desktop *****/

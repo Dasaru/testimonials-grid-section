@@ -161,7 +161,66 @@ main {
   color: var(--grey-100, white);
 }
 
+/***** Tablet *****/
+@media (min-width: 730px) {
+  main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      "a a"
+      "b c"
+      "d d"
+      "e e";
+    align-self: center;
+    min-width: 64.7rem;
+  }
+
+  .card:nth-child(1) {
+    grid-area: a;
+  }
+  .card:nth-child(2) {
+    grid-area: b;
+  }
+  .card:nth-child(3) {
+    grid-area: c;
+  }
+  .card:nth-child(4) {
+    grid-area: d;
+  }
+  .card:nth-child(5) {
+    grid-area: e;
+  }
+}
+
 /***** Desktop *****/
+
+@media (min-width: 1200px) {
+  main {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    align-self: center;
+    grid-template-areas:
+      "a a b e"
+      "c d d e";
+    width: 111.4rem;
+  }
+
+  .card:nth-child(1) {
+    grid-area: a;
+  }
+  .card:nth-child(2) {
+    grid-area: b;
+  }
+  .card:nth-child(3) {
+    grid-area: c;
+  }
+  .card:nth-child(4) {
+    grid-area: d;
+  }
+  .card:nth-child(5) {
+    grid-area: e;
+  }
+}
 
 /***** Footer ******/
 .attribution {

@@ -195,6 +195,11 @@ main {
 /***** Desktop *****/
 
 @media (min-width: 1200px) {
+  body {
+    height: 100vh;
+    justify-content: center;
+  }
+
   main {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
